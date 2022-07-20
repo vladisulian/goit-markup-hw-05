@@ -322,10 +322,43 @@ address,
   margin-top: 50px;
 }
 
-.wawd_list_pic:not(:first-child) {
+.wawd_item_pic:not(:first-child) {
   margin-left: 30px;
 }
-/* ----------------OUR TEAM SECT---------------- */
+.wawd_item_pic {
+  position: relative;
+}
+.wawd-pic-desc-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  bottom: 0px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--btn_txt_cl);
+}
+
+.wawd-pic-desc-container {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  bottom: 0px;
+
+  color: var(--btn_txt_cl);
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+/* ##### OUR TEAM SECT ##### */
 .our_team_sect {
   text-align: center;
   background-color: var(--our_team_bg_col);
