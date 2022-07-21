@@ -330,8 +330,10 @@ address,
   color: var(--Studio_text);
 }
 .modal-close-button-svg {
-  width: 18px;
-  height: 12px;
+  width: 22px;
+  height: 22px;
+  border: 2px solid red;
+  fill: currentColor;
 }
 .cat-btn {
   width: 75px;
