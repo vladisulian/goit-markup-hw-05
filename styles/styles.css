@@ -150,6 +150,9 @@ address,
 .nav_list_block {
   display: flex;
 }
+.nav_list {
+  position: relative;
+}
 .nav_list:not(:first-child) {
   margin-left: 50px;
 }
@@ -216,6 +219,15 @@ address,
 
 .current {
   color: var(--accent_col);
+}
+.current_page {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+
+  border: 2px solid var(--accent_col);
+  border-radius: 2px;
 }
 
 .main_bg {
