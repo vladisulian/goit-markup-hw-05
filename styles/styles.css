@@ -258,7 +258,7 @@ address,
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: var(--white);
+  color: var(--btn_txt_cl);
 }
 
 .btn {
@@ -446,12 +446,6 @@ address,
   background-color: var(--accent_col);
 }
 
-/* .our-team-svg:hover {
-  border-radius: 50%;
-  color: white;
-  background-color: var(--accent_col);
-} */
-
 /* ===========CUSTOMERS===========*/
 
 .customers-text {
@@ -512,7 +506,7 @@ address,
   color: var(--blue);
 }
 .footer_Studio {
-  color: var(--white);
+  color: var(--btn_txt_cl);
 }
 
 .footer_contacts_item:not(:first-child) {
@@ -522,7 +516,7 @@ address,
 .footer_map {
   line-height: 24px;
 
-  color: var(--white);
+  color: var(--btn_txt_cl);
 }
 .footer_contacts {
   line-height: 24px;
