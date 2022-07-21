@@ -70,7 +70,28 @@
         <div class="container">
           <h1 class="main_text">Эффективные решения для вашего бизнеса</h1>
           <!-- Button -->
-          <button type="button" class="btn">Заказать услугу</button>
+          <button type="button" class="main-modal-btn" data-modal-open>Заказать услугу</button>
+
+          <!-- ======###### modal js #######======= -->
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <img src="./images/cat.jpg" alt="cat" />
+              <p>Do you like a cat? :)</p>
+              <button class="cat-btn cat-btn-1">
+                <a href="https://cdn.fishki.net/upload/post/201311/25/1216398/740_263043p7p1il.jpg"
+                  >Yes</a
+                >
+              </button>
+              <button class="cat-btn cat-btn-2">
+                <a href="https://i.ytimg.com/vi/ly0-kftlhjQ/maxresdefault.jpg">no</a>
+              </button>
+              <button class="modal-close-button" data-modal-close>
+                <svg class="modal-close-button-svg">
+                  <use href="./images/exit-modal-button.svg"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -448,28 +469,7 @@
       </div>
     </footer>
 
-    <!-- ##### script ##### -->
-    <script>
-      (() => {
-        const refs = {
-          openModalBtn: document.querySelector('[data-modal-open]'),
-          closeModalBtn: document.querySelector('[data-modal-close]'),
-          backdrop: document.querySelector('[data-backdrop'),
-        };
-
-        refs.openModalBtn.addEventListener('click', toggleModal);
-        refs.closeModalBtn.addEventListener('click', toggleModal);
-
-        refs.backdrop.addEventListener('click', logBackdropClick);
-
-        function toggleModal() {
-          refs.backdrop.classList.toggle('is-hidden');
-        }
-
-        function logBackdropClick() {
-          console.log('Это клик в бекдроп');
-        }
-      })();
-    </script>
+    <!-- ##### js script ##### -->
+    <script src="/js/modal.js"></script>
   </body>
 </html>
