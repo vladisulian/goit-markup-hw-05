@@ -386,6 +386,7 @@
           <a href="./index.html" class="footer_web webstudio"
             >Web<span class="footer_Studio">Studio</span>
           </a>
+          <!-- ##### address ##### -->
           <address>
             <ul>
               <!-- footer map -->
@@ -446,5 +447,29 @@
         </div>
       </div>
     </footer>
+
+    <!-- ##### script ##### -->
+    <script>
+      (() => {
+        const refs = {
+          openModalBtn: document.querySelector('[data-modal-open]'),
+          closeModalBtn: document.querySelector('[data-modal-close]'),
+          backdrop: document.querySelector('[data-backdrop'),
+        };
+
+        refs.openModalBtn.addEventListener('click', toggleModal);
+        refs.closeModalBtn.addEventListener('click', toggleModal);
+
+        refs.backdrop.addEventListener('click', logBackdropClick);
+
+        function toggleModal() {
+          refs.backdrop.classList.toggle('is-hidden');
+        }
+
+        function logBackdropClick() {
+          console.log('Это клик в бекдроп');
+        }
+      })();
+    </script>
   </body>
 </html>
