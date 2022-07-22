@@ -299,7 +299,6 @@ address,
 
   background-color: var(--backdrop-bg-cl);
 }
-
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -316,33 +315,34 @@ address,
   padding: 15px;
   padding-top: 30px;
 
+  color: var(--Studio_text);
   background-color: #fff;
 }
 .modal > p {
   padding: 35px;
   font-size: 24px;
 }
-.modal-close-button {
+.modal-close-button-svg {
   position: absolute;
   top: 0;
   right: 0;
-
-  color: var(--Studio_text);
-}
-.modal-close-button-svg {
   width: 22px;
   height: 22px;
+
   border: 2px solid red;
-  fill: currentColor;
+  fill: black;
 }
+
+/* ##### cat ##### */
 .cat-btn {
   width: 75px;
   height: 50px;
   font-style: 24px;
   font-weight: 600;
+
+  text-align: center;
 }
 .cat-btn > a {
-  padding: 25px;
   color: var(--Studio_text);
 }
 .cat-btn-1 {
@@ -353,7 +353,8 @@ address,
   position: absolute;
   right: 15%;
 }
-/* ----------------TRAITS---------------- */
+
+/* ##### traits ##### */
 .traits_list_block {
   display: flex;
   gap: 30px;
@@ -420,7 +421,6 @@ address,
   bottom: 0px;
 
   font-weight: 700;
-  font-size: 14px;
   line-height: calc(16 / 14);
   text-align: center;
   text-transform: uppercase;
