@@ -676,14 +676,17 @@ address,
 .filter_overlay_square {
   position: relative;
   overflow: hidden;
+
   /* border: 2px solid red; */
 }
-.filter_overlay_square:hover .overlay {
+.filter_link:hover .overlay,
+.filter_link:focus .overlay {
   transform: translatey(0);
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .overlay {
   position: absolute;
   top: 0;
