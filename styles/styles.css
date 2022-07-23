@@ -105,24 +105,6 @@ address,
   padding-bottom: 94px;
 }
 
-.main-modal-btn:hover {
-  color: var(--btn_txt_cl);
-  background-color: var(--btn_bg_darker_cl);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.main-modal-btn:focus {
-  color: #ffffff;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.main-modal-btn:focus {
-  outline: none;
-  box-shadow: 0 0 0 1.5px var(--focus_bg_col);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 /* ##### header ##### */
 
 .header {
@@ -299,6 +281,17 @@ address,
   background-color: var(--btn_bg_cl);
 
   cursor: pointer;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main-modal-btn:hover,
+.main-modal-btn:focus {
+  color: var(--btn_txt_cl);
+  background-color: var(--btn_bg_darker_cl);
+  outline: none;
+  box-shadow: 0 0 0 1.5px var(--focus_bg_col);
 }
 
 /* ##### modal ##### */
@@ -314,13 +307,11 @@ address,
 
   transition-property: opacity;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
-
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-
 }
 
 .modal {
@@ -427,7 +418,6 @@ label:focus {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .comment:hover,
 .comment:focus {
   border-color: var(--accent_col);
@@ -451,7 +441,21 @@ label:focus {
   background-color: #188ce8;
   color: var(--btn_txt_cl);
   border-radius: 4px;
+  border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  cursor: pointer;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.submit-button:hover,
+.submit-button:focus {
+  color: var(--btn_txt_cl);
+  background-color: var(--btn_bg_darker_cl);
+  outline: none;
+  box-shadow: 0 0 0 1.5px var(--focus_bg_col);
 }
 
 /* ##### traits ##### */
