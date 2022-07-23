@@ -328,20 +328,18 @@ address,
 }
 
 .modal-close-button {
-  border-radius: 50%;
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-.modal-close-button {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 22px;
-  height: 22px;
+  top: 8px;
+  right: 8px;
 
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+.modal-close-button-pic {
   cursor: pointer;
-
-  z-index: 100000;
 }
 .modal-title {
   font-size: 20px;
