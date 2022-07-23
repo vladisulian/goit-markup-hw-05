@@ -328,9 +328,11 @@ address,
 }
 
 .modal-close-button {
-  color: red;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.modal-close-button-svg {
+.modal-close-button {
   position: absolute;
   top: 0;
   right: 0;
@@ -338,9 +340,6 @@ address,
   height: 22px;
 
   cursor: pointer;
-  /* border-radius: 50%; */
-
-  fill: currentColor;
 
   z-index: 100000;
 }
