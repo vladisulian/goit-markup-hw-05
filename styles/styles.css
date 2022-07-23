@@ -746,19 +746,23 @@ label:focus {
   display: flex;
   color: var(--btn_txt_cl);
 }
-.subscr-input {
+.subscr-label > input {
   width: 358px;
 
   padding-left: 16px;
 
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  background-color: transparent;
-
   outline: none;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
   color: var(--btn_txt_cl);
+  background-color: transparent;
 }
+.subscr-label > input:hover {
+  border-color: var(--accent_col);
+}
+
 .subscr-label > button {
   width: 200px;
   height: 50px;
@@ -795,7 +799,7 @@ label:focus {
 .subscr-label > button:focus {
   color: var(--btn_txt_cl);
 }
-.subscr-svg{
+.subscr-svg {
   width: 35px;
   padding-left: 10px;
 }
