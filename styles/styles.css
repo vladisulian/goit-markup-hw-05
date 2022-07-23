@@ -105,15 +105,6 @@ address,
   padding-bottom: 94px;
 }
 
-.nav_text:hover,
-.contacts:hover,
-.footer_contacts:hover,
-.footer_map:hover {
-  color: var(--accent_col);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .main-modal-btn:hover {
   color: var(--btn_txt_cl);
   background-color: var(--btn_bg_darker_cl);
@@ -124,11 +115,8 @@ address,
   color: #ffffff;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav_text:focus,
-.contacts:focus,
-.main-modal-btn:focus,
-.footer_contacts:focus,
-.footer_map:focus {
+
+.main-modal-btn:focus {
   outline: none;
   box-shadow: 0 0 0 1.5px var(--focus_bg_col);
   transition-duration: 250ms;
@@ -177,6 +165,12 @@ address,
 
   color: var(--text_col);
 }
+.nav_text:hover,
+.nav_text:focus {
+  color: var(--accent_col);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .contacts_header_list {
   display: flex;
   margin-left: auto;
@@ -195,8 +189,14 @@ address,
   color: var(--contacts_col);
   padding: 32px 0;
 }
+.contacts:hover,
+.contacts:focus {
+  color: var(--accent_col);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-/* ==========ICON SVG========== */
+/* ##### icon svg ##### */
 
 .icon_mail {
   width: 16px;
@@ -218,7 +218,7 @@ address,
   height: 70px;
 }
 
-/* =======SVG HOVER====== */
+/* ##### svg hover ##### */
 
 .svg {
   fill: var(--calm_state_svg);
@@ -334,7 +334,6 @@ address,
   width: 30px;
   height: 30px;
   cursor: pointer;
-
 
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -618,7 +617,8 @@ label:focus {
   width: 170px;
   height: 92px;
 }
-.customers-link:hover {
+.customers-link:hover,
+.customers-link:focus {
   color: var(--accent_col);
   border-color: var(--accent_col);
 
@@ -669,10 +669,22 @@ label:focus {
 
   color: var(--btn_txt_cl);
 }
+.footer_map:hover,
+.footer_map:focus {
+  color: var(--accent_col);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .footer_contacts {
   line-height: 24px;
 
   color: var(--footer_contacts_col);
+}
+.footer_contacts:hover,
+.footer_contacts:focus {
+  color: var(--accent_col);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-text {
