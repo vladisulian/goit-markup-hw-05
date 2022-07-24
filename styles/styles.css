@@ -42,6 +42,7 @@ svg {
   --btn_txt_cl: #ffffff;
   --overlay-bg: rgba(33, 150, 243, 0.9);
   --backdrop-bg-cl: rgba(0, 0, 0, 0.2);
+  --second-text-color: #212121;
 
   /* svg */
   --icon_color: #afb1b8;
@@ -328,19 +329,33 @@ address,
   color: var(--Studio_text);
   background-color: #fff;
 }
-
 .modal-close-button {
   position: absolute;
+
+  display: flex;
+  align-items: center;
+
   top: 8px;
   right: 8px;
+
   width: 30px;
   height: 30px;
   cursor: pointer;
 
-  border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
   background-color: #ffffff;
+
+  transition-property: color;
+  /* transition-delay: 250ms; */
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-close-button:hover,
+.modal-close-button:focus {
+  color: var(--accent_col);
+}
+
 .modal-title {
   font-size: 20px;
   font-weight: 700;
@@ -830,14 +845,15 @@ label:focus {
   text-align: center;
   letter-spacing: 0.03em;
 
-  background-color: #f5f4fa;
-
   border-radius: 4px;
   border: none;
 
   padding: 6px 22px;
 
   cursor: pointer;
+
+  color: var(--second-text-color);
+  background-color: #f5f4fa;
 
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
@@ -869,9 +885,7 @@ label:focus {
 }
 .filter_link:hover .overlay,
 .filter_link:focus .overlay {
-  transform: translatey(0);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
 }
 
 .overlay {
@@ -883,7 +897,7 @@ label:focus {
   height: 100%;
 
   transition-property: transform;
-  transition: transform 250ms ease;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   transform: translatey(150%);
